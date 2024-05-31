@@ -1,0 +1,21 @@
+<!-- product.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= product.name %></title>
+  <style>
+    /* Thêm CSS đơn giản ở đây */
+    .product-details {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-details">
+    <img src="<%= product.image %>" alt="<%= product.name %>" width="300">
+    <h1><%= product.name %></h1>
+    <p>Price: $<%= product.price %></p>
+    <p><%= product.description %></p>
+  </div>
+</body>
+</html>
